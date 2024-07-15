@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BusinessContext\" />
+    <None Remove="BusinessContext\DB\" />
+    <None Remove="BusinessContext\DB\Storage\" />
+    <None Remove="BusinessContext\Entities\" />
+    <None Remove="Exceptions\" />
+    <None Remove="UserInterface\" />
+    <None Remove="Helpers\" />
+    <None Remove="Seeding\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LogicContext\" />
+    <Folder Include="LogicContext\DB\" />
+    <Folder Include="LogicContext\DB\Storage\" />
+    <Folder Include="LogicContext\Entities\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="UserInterface\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Seeding\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="taglib-sharp-netstandard2.0" Version="2.1.0" />
+  </ItemGroup>
+</Project>
