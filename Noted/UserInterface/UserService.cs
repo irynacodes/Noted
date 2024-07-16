@@ -634,7 +634,6 @@ namespace Noted.UserInterface
                 else if (ops[0] == "view")
                 {
                     ViewSong(song, user);
-                    PrintSongPage(page, i - 10);
                 }
             } while (true);
 
